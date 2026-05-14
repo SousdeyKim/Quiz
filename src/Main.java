@@ -48,9 +48,13 @@ public class Main {
 
         for(int i = 0; i < 5; i++){
             System.out.println(questions[i]);
-            for(int j=0; j<4; j++){
-                System.out.println(options[i][j]);
+
+            for(String option : options[i]){
+                System.out.println(option);
             }
+            /*for(int j=0; j<4; j++){
+                System.out.println(options[i][j]);
+            }*/
             do {
                 System.out.print("Choose your answer (A->D): ");
                 userAnswers[i] = Character.toUpperCase(scanner.next().charAt(0));
